@@ -17,7 +17,7 @@ use App\Models\MainGame;
 class TestController extends Controller
 {
     public function type1(Request $request)
-    {
+	{
         if ($request->type='admin') {
             $myinfo = User::where('role', config('user.role.admin'))->first();
         } else {

@@ -23,7 +23,7 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
+	{
             /*kokkara*/
             //セッションからアクセストークン取得
             // $accessToken = session()->get('accessToken');
@@ -46,7 +46,7 @@ class HomeController extends Controller
             // if ($userInfo) {
             //   print_r($userInfo);
             // }
-        //return view('home');
-        return redirect()->route('event.index');
+        return view('home');
+        // return redirect()->route('event.index');
     }
 }
